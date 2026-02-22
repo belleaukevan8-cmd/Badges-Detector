@@ -1,0 +1,17 @@
+App(
+    appid="badge_detector",
+    name="Badge Detector",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="badge_detector_app",
+    requires=[
+        "gui",
+        "nfc",
+        "rfid",
+        "storage",
+    ],
+    stack_size=2048,
+    fap_category="Tools",
+    fap_version=(1, 0),
+    fap_description="Detect and log NFC/RFID badges",
+    fap_author="FZOC",
+)
